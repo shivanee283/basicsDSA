@@ -182,4 +182,25 @@ public class SLLfunc {
             return true;
         }
     }
+
+    public Node remove(int index){
+        if(index<0 || index>=length){
+            System.out.println("out of bound");
+            return null;
+        }
+        if(index == 0){
+            return removeFirst();
+        }
+        else if(index == length-1){
+            return removeLast();
+        }
+        else{
+            Node temp = get(index);
+            Node pre = get(index-1);
+            pre.next = temp.next;
+            temp.next = null;
+            length--;
+            return temp;
+        }
+    }
 }

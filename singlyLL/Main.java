@@ -44,6 +44,9 @@ public class Main {
         // inserting a node wherever i want
         mySlLfunc.insert(0, 100);
 
+        // removing a node from wherever i want
+        mySlLfunc.remove(0);
+
         System.out.println();
         System.out.print("Singly Linked List is : ");
         //printing the LinkedList
