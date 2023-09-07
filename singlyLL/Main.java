@@ -31,6 +31,9 @@ public class Main {
         //getting the length of LinkedList
         mySlLfunc.getLength();
 
+        //getting a node by index
+        System.out.println("Node is : " + mySlLfunc.get(2).value + " ");
+
         System.out.print("Singly Linked List is : ");
         //printing the LinkedList
         mySlLfunc.printSll();
