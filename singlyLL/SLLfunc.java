@@ -140,4 +140,15 @@ public class SLLfunc {
         return temp;
     }
     
+    //set method - to set value of a node
+    public boolean set(int index, int value){
+        //check if the given index is valid
+        Node temp = get(index); //checked automatically;
+        //check if temp is null or not;
+        if(temp!=null){
+            temp.value = value;//this will change only data and next pointer
+            return true;
+        }
+        return false; //couldn't
+    }
 }

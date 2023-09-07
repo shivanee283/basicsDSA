@@ -34,6 +34,9 @@ public class Main {
         //getting a node by index
         System.out.println("Node is : " + mySlLfunc.get(2).value + " ");
 
+        //setting a node
+        mySlLfunc.set(1, 40);
+
         System.out.print("Singly Linked List is : ");
         //printing the LinkedList
         mySlLfunc.printSll();
