@@ -203,4 +203,24 @@ public class SLLfunc {
             return temp;
         }
     }
+    //Method to reverse a Singly Linked List
+    public void reverse(){
+        if(length==0){
+            System.out.println("no nodes to be reversed");
+        }
+        //Swapping head and tail first;
+        Node temp = head;
+        head = tail;
+        tail = temp;
+        Node after = temp.next;
+        Node before = null;
+
+        for(int i=0;i<length;i++){
+            after = temp.next;
+            //direction changes
+            temp.next = before;
+            before = temp;
+            temp = after;
+        }
+    }
 }

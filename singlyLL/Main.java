@@ -51,5 +51,13 @@ public class Main {
         System.out.print("Singly Linked List is : ");
         //printing the LinkedList
         mySlLfunc.printSll();
+
+        //reversing a Singly Linked List
+        mySlLfunc.reverse();
+        
+        System.out.println();
+        System.out.print("Singly Linked List is : ");
+        //printing the LinkedList
+        mySlLfunc.printSll();
     }
 }
