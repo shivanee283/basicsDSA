@@ -40,5 +40,13 @@ public class Main {
         System.out.print("Singly Linked List is : ");
         //printing the LinkedList
         mySlLfunc.printSll();
+
+        // inserting a node wherever i want
+        mySlLfunc.insert(0, 100);
+
+        System.out.println();
+        System.out.print("Singly Linked List is : ");
+        //printing the LinkedList
+        mySlLfunc.printSll();
     }
 }

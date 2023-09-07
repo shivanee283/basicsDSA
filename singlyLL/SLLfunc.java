@@ -151,4 +151,35 @@ public class SLLfunc {
         }
         return false; //couldn't
     }
+
+    //Method to insert a node where wanted
+    public boolean insert(int index, int value){
+        Node newNode = new Node(value);
+        //checking if there are any nodes persent 
+        // if(length == 0){
+        //     newNode = head;
+        //     newNode = tail;
+        // }
+
+        //Checking 
+        if(index<0 || index>length){
+            System.out.println("out of bound");
+            return false;
+        }
+        else if(index ==0){
+            prepend(value);
+            return true;
+        }
+        else if(index == length){
+            append(value);
+            return true;
+        }
+        else{
+            Node temp = get(index-1);
+            newNode.next = temp.next;
+            temp.next = newNode;
+            length++;
+            return true;
+        }
+    }
 }
