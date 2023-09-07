@@ -25,4 +25,28 @@ public class SLLfunc {
         tail = newNode;
         length = 1;
     }
+
+    //Method to print the singly linked list
+    public void printSll(){
+        Node temp = head;
+        while(temp != null){
+            System.out.println(temp.value);
+            temp = temp.next;
+        }
+    }
+    //Method to get the head of the LinkedList
+    public void getHead(){
+        System.out.println("Head : "+ head.value);
+    }
+
+    //Method to get the tail of the LinkedList
+    public void getTail(){
+        System.out.println("Tail : "+tail.value);
+    }
+
+    //Method to get the length of the LinkedList
+    public void getLength(){
+        System.out.println("Length : "+ length);
+    }
+    //method for adding node at front (head)
 }

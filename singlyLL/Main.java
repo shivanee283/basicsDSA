@@ -5,6 +5,14 @@ public class Main {
         // write your code here
         // creating a instance of the Single Linked List
         SLLfunc mySlLfunc = new SLLfunc(4);
-        System.out.println(mySlLfunc);
+
+        //getting head value;
+        mySlLfunc.getHead();
+        //getting the tail value;
+        mySlLfunc.getTail();
+        //getting the length of LinkedList
+        mySlLfunc.getLength();
+        //printing the LinkedList
+        mySlLfunc.printSll();
     }
 }
