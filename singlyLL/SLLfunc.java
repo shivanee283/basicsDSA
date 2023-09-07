@@ -48,5 +48,23 @@ public class SLLfunc {
     public void getLength(){
         System.out.println("Length : "+ length);
     }
-    //method for adding node at front (head)
+
+
+    //Method to add a node from last {Append}
+    public void append(int value){
+        //creating a new Node with given input
+        Node newNode = new Node(value);
+        //checking whether there is only one element in LL or not, then we have to change both head & tail accordingly
+        //checking for empty Linked List
+        if(length == 0 ){
+            head = newNode;
+            tail = newNode;
+        }
+        else{
+            tail.next = newNode;
+            tail = newNode;
+        }
+        length++;
+    }
+    
 }
