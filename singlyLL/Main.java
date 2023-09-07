@@ -25,6 +25,9 @@ public class Main {
         //prepending a value
         mySlLfunc.prepend(90);
 
+        //removing first node;
+        mySlLfunc.removeFirst();
+
         //getting the length of LinkedList
         mySlLfunc.getLength();
 

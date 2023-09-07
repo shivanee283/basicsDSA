@@ -104,5 +104,25 @@ public class SLLfunc {
         }
         length++;
     }
+
+    //removing first node from singly linked list
+    public Node removeFirst(){
+        //chekcing if there are any elements
+        if(length==0){
+            System.out.println("List Empty");
+            return null;
+        }
+        Node temp = head;
+        head = head.next;
+        temp.next = null;
+        length--;
+        
+        //again checking [whatif earlier length was 1]
+        if(length ==0){
+            head = null;
+            tail = null;
+        }
+        return temp;
+    }
     
 }
