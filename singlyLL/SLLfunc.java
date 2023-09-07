@@ -66,5 +66,28 @@ public class SLLfunc {
         }
         length++;
     }
+
+    //Method to remove last Node from singly LinkedList {removeLast}
+    public Node removeLast(){
+        //check if there is any Node or not
+        if(length == 0){
+            return null;
+        }
+        // initialising a temp Node pointing to Head;
+        Node temp = head;
+        Node pre = temp;
+        while(temp.next != null){
+            pre = temp;
+            temp = temp.next;
+        }
+        tail = pre;
+        pre.next = null;
+        length--;
+        if(length==0){
+            head = null;
+            tail = null;
+        }
+        return temp;
+    }
     
 }
