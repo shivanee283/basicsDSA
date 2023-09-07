@@ -10,8 +10,7 @@ public class Main {
         mySlLfunc.getHead();
         //getting the tail value;
         mySlLfunc.getTail();
-        //getting the length of LinkedList
-        mySlLfunc.getLength();
+        
 
         //appending a node
         mySlLfunc.append(2);
@@ -23,6 +22,13 @@ public class Main {
         //removing from last;
         mySlLfunc.removeLast();
 
+        //prepending a value
+        mySlLfunc.prepend(90);
+
+        //getting the length of LinkedList
+        mySlLfunc.getLength();
+
+        System.out.print("Singly Linked List is : ");
         //printing the LinkedList
         mySlLfunc.printSll();
     }

@@ -30,7 +30,7 @@ public class SLLfunc {
     public void printSll(){
         Node temp = head;
         while(temp != null){
-            System.out.println(temp.value);
+            System.out.print(temp.value + " ");
             temp = temp.next;
         }
     }
@@ -88,6 +88,21 @@ public class SLLfunc {
             tail = null;
         }
         return temp;
+    }
+
+    //adding a node from front {prepend}
+    public void prepend(int value){
+        //creating a newNode;
+        Node newNode = new Node(value);
+        if(length==0){
+            head = newNode;
+            tail = newNode;
+        }
+        else{
+            newNode.next=head;
+            head = newNode;
+        }
+        length++;
     }
     
 }
