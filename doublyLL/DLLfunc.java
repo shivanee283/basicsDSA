@@ -45,7 +45,7 @@ public class DLLfunc {
     public void printL(){
         Node temp = head;
         while(temp != null){
-            System.out.print( "-> "+temp.value +" ");
+            System.out.print(" "+temp.value + " <-> ");
             temp = temp.next;
         }
         System.out.println();
@@ -102,5 +102,25 @@ public class DLLfunc {
             head = newNode;
         }
         length++;
+    }
+
+    //removing the first node
+    public Node removeFirst(){
+        if(length == 0){
+            System.out.println("Doubly LL is empty");
+            return null;
+        }
+        Node temp = head;
+        head = head.next;
+        head.prev = null;
+        temp.next = null;
+        length--;
+
+        //checking length again [whatif length is 1]
+        if(length==0){
+            head = null;
+            tail = null;
+        }
+        return temp;
     }
 }

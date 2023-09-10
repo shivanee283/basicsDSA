@@ -16,6 +16,9 @@ public class Main {
         //prepending a node
         myDlLfunc.prepend(1);
 
+        //removing first node
+        myDlLfunc.removeFirst();
+
         //getting length
         myDlLfunc.getLength();
         //printing doublyLinked List
