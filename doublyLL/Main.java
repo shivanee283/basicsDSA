@@ -14,6 +14,10 @@ public class Main {
 
         //appending a node
         myDlLfunc.append(4);
+        myDlLfunc.append(6);
+
+        //removing last node
+        myDlLfunc.removeLast();
 
         //getting length
         myDlLfunc.getLength();

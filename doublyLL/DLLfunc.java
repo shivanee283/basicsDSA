@@ -33,7 +33,7 @@ public class DLLfunc {
 
     //getting tail of doublyLinked list
     public void getTail(){
-        System.out.println("Tail : "+tail.value);
+        System.out.println("Tail : "+ tail.value);
     }
 
     //getting length of doublyLinked list
@@ -66,5 +66,24 @@ public class DLLfunc {
             tail = newNode;
         }
         length++;
+    }
+
+    //removing a node from last
+    public Node removeLast(){
+        if(length==0){
+            return null;
+        }
+        Node temp = tail;
+        tail = tail.prev;
+        tail.next = null;
+        temp.prev = null;
+        length--;
+
+        //again checking length [whatif length was 1]
+        if(length==0){
+            head = null;
+            tail = null;
+        }
+        return temp;
     }
 }
