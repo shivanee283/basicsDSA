@@ -40,5 +40,11 @@ public class Main {
 
         //printing doublyLinked List
         myDlLfunc.printL();
+
+        //removing a node from index
+        myDlLfunc.remove(3);
+
+        //printing doublyLinked List
+        myDlLfunc.printL();
     }
 }
