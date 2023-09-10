@@ -138,4 +138,16 @@ public class DLLfunc {
         }
         return temp;
     }
+
+    //set method for doublyLinked List
+    public boolean set(int index, int value){
+        //checking if index is less than zero and greater than length of list[wrong]
+        Node temp = get(index); //checks automatically
+
+        if(temp!=null){
+            temp.value = value;
+            return true;
+        }
+        return false;
+    }
 }

@@ -31,5 +31,11 @@ public class Main {
 
         //get a node by index
         System.out.println(myDlLfunc.get(1).value);
+
+        //setting [changing] value for a node
+        myDlLfunc.set(0, 10);
+
+        //printing doublyLinked List
+        myDlLfunc.printL();
     }
 }
