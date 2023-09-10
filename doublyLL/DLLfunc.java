@@ -48,6 +48,7 @@ public class DLLfunc {
             System.out.print( "-> "+temp.value +" ");
             temp = temp.next;
         }
+        System.out.println();
     }
 
     //Appending a node in a doubly linked list
@@ -85,5 +86,21 @@ public class DLLfunc {
             tail = null;
         }
         return temp;
+    }
+
+    //prepending a node in doublyLinked List
+    public void prepend(int value){
+        //creating a node 
+        Node newNode = new Node(value);
+        if(length == 0){
+            head = newNode;
+            tail = newNode;
+        }
+        else{
+            newNode.next = head;
+            head.prev = newNode;
+            head = newNode;
+        }
+        length++;
     }
 }
