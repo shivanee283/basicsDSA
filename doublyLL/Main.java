@@ -17,7 +17,7 @@ public class Main {
         myDlLfunc.prepend(1);
 
         //removing first node
-        myDlLfunc.removeFirst();
+        // myDlLfunc.removeFirst();
 
         //getting length
         myDlLfunc.getLength();
@@ -28,5 +28,8 @@ public class Main {
         myDlLfunc.getHead();
         //getting tail
         myDlLfunc.getTail();
+
+        //get a node by index
+        System.out.println(myDlLfunc.get(1).value);
     }
 }

@@ -123,4 +123,19 @@ public class DLLfunc {
         }
         return temp;
     }
+
+    //get method for doublyLinked List
+    public Node get(int index){
+        //checking if index is less than 0 or greater than length [wrong]
+        if(index<0 || index > length){
+            return null;
+        }
+
+        //initialiing a node
+        Node temp = head;
+        for(int i=0;i<index;i++){
+            temp = temp.next;
+        }
+        return temp;
+    }
 }
