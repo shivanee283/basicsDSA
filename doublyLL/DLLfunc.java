@@ -26,4 +26,27 @@ public class DLLfunc {
         length = 1;
     }
 
+    //getting head of doublyLinked list
+    public void getHead(){
+        System.out.println("Head : "+ head.value);
+    }
+
+    //getting tail of doublyLinked list
+    public void getTail(){
+        System.out.println("Tail : "+tail.value);
+    }
+
+    //getting length of doublyLinked list
+    public void getLength(){
+        System.out.println("Length : "+ length);
+    }
+
+    //printing doubly Linked List
+    public void printL(){
+        Node temp = head;
+        while(temp != null){
+            System.out.println(temp.value+ " ->");
+            temp = temp.next;
+        }
+    }
 }
