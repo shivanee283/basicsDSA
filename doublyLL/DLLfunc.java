@@ -45,8 +45,26 @@ public class DLLfunc {
     public void printL(){
         Node temp = head;
         while(temp != null){
-            System.out.println(temp.value+ " ->");
+            System.out.print( "-> "+temp.value +" ");
             temp = temp.next;
         }
+    }
+
+    //Appending a node in a doubly linked list
+    public void append(int value){
+        //creating newNode
+        Node newNode = new Node (value);
+        if(length==0){
+            //inserting the first element into the LinkedList
+            head = newNode;
+            tail = newNode;
+        }
+        else{
+            //inserting at last position
+            newNode.prev = tail;
+            tail.next = newNode;
+            tail = newNode;
+        }
+        length++;
     }
 }

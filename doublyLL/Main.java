@@ -10,9 +10,13 @@ public class Main {
         myDlLfunc.getHead();
         //getting tail
         myDlLfunc.getTail();
+        
+
+        //appending a node
+        myDlLfunc.append(4);
+
         //getting length
         myDlLfunc.getLength();
-
         //printing doublyLinked List
         myDlLfunc.printL();
     }
