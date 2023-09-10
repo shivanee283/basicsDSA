@@ -35,6 +35,9 @@ public class Main {
         //setting [changing] value for a node
         myDlLfunc.set(0, 10);
 
+        //inserting a node at index
+        myDlLfunc.insert(2, 19);
+
         //printing doublyLinked List
         myDlLfunc.printL();
     }

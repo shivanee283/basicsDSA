@@ -150,4 +150,29 @@ public class DLLfunc {
         }
         return false;
     }
+
+    //insert a node anywhere in doublyLinked list
+    public boolean insert(int index, int value){
+        if(index<0 || index>length){
+            return false;
+        }
+        if(length==0){
+            prepend(value);
+            return true;
+        }
+        else if(index==length){
+            append(value);
+            return true;
+        }
+        else{
+            Node newNode = new Node(value);
+            Node temp = get(index-1);
+            temp.next.prev = newNode;
+            newNode.next = temp.next;
+            temp.next = newNode;
+            newNode.prev = temp;
+            length++;
+            return true;
+        }
+    }
 }
