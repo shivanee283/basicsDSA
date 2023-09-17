@@ -24,18 +24,16 @@ public class SelectionSort {
     }
 
     // selection sort method
-    public static void selection(int[] array) {
-        for (int i = 0; i < array.length; i++) {
+    public static void selection(int[] array){
+        for(int i=0;i<array.length;i++){
             int minIndex = i;
-            for (int j = i + 1; j < array.length; j++) {
-                // if the current element is less than or equal to the next one
-                if (array[j] < array[minIndex]) {
-                    // swap
+
+            for(int j=i+1;j<array.length;j++){
+                if(array[j]<array[minIndex]){
                     minIndex = j;
-                    // System.out.println("Swapping "+array[j]+" with " + array[minIndex]);
                 }
             }
-            if (i != minIndex) {
+            if(i != minIndex){
                 int temp = array[i];
                 array[i] = array[minIndex];
                 array[minIndex] = temp;
