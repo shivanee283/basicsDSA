@@ -1,8 +1,25 @@
 package sorting;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Insertion {
     public static void main(String[] args) {
-        
+        System.out.println("insertion sort");
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("how many elements to be sorted ?");
+        int n = sc.nextInt();
+        int arr[]=new int[n];
+
+        System.out.println("enter the elements");
+        for(int i =0 ;i<n;i++){
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.println("sorted elements are");
+        insertion(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
     public static void insertion(int[] array){
